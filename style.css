@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+} 
+
+body {
+    background: rgba(247, 248, 248, 0.856);
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(to right, #4e76cb, #60a5fa);
+    height: 100vh; 
+    margin: 0; 
+
+    justify-content: center;
+    align-items: flex-start;   /*move content to top */
+    padding-top: 40px;
+} 
+
+/* Main container */
+.todo-container {
+    background: #ffffff;
+    width: 420px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading on top */
+.todo-container h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #222;
+}
+
+/* Input section BELOW heading */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Input */
+#todo-input {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#todo-input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Add button */
+#add-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background: #1e4ed8;
+}
+
+/* Task list BELOW input */
+#todo-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+/* Each task */
+#todo-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    background: #f9fafb;
+}
+
+/* Task text */
+#todo-list span {
+    flex: 1;
+    font-size: 14px;
+}
+
+/* Delete button */
+#todo-list button {
+    background: #ef4444;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#todo-list button:hover {
+    background: #dc2626;
+}
